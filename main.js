@@ -1,4 +1,4 @@
-/*function isMobile() {
+function isMobile() {
     if (sessionStorage.desktop)
         return false;
     else if (localStorage.mobile)
@@ -8,11 +8,11 @@
         if (navigator.userAgent.toLowerCase().indexOf(mobile[i].toLowerCase()) > 0) return true;
     return false;
 }
-*/
+
 const formulario = document.querySelector('#formulario');
 const buttonSubmit = document.querySelector('#submit');
 const urlDesktop = 'https://web.whatsapp.com/';
-const urlMobile = 'https://web.whatsapp.com/';
+const urlMobile = 'whatsapp://';
 const telefono = '528133873447';
 
 formulario.addEventListener('submit', (event) => {
