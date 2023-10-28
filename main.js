@@ -23,7 +23,7 @@ formulario.addEventListener('submit', (event) => {
         let nombre = document.querySelector('#nombre').value
         let apellidos = document.querySelector('#apellidos').value
         let email = document.querySelector('#email').value
-        let mensaje = 'send?phone=' + telefono + '&text=👻*_Test Whatsapp Form_*👻<br/>%0A*Nombre:*%0A' + nombre + '%0A*Apellido:*%0A' + apellidos + '%0A*Correo:*%0A' + email + ''
+        let mensaje = 'send?phone=' + telefono + '&text=*_Whatsapp Form Test_*%0A%0A*Nombre:*%0A' + nombre + '%0A*Apellido:*%0A' + apellidos + '%0A*Correo:*%0A' + email + ''
         if(isMobile()) {
             window.open(urlMobile + mensaje, '_blank')
         }else{
