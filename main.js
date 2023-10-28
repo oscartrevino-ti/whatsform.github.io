@@ -1,4 +1,4 @@
-function isMobile() {
+/*function isMobile() {
     if (sessionStorage.desktop)
         return false;
     else if (localStorage.mobile)
@@ -8,7 +8,7 @@ function isMobile() {
         if (navigator.userAgent.toLowerCase().indexOf(mobile[i].toLowerCase()) > 0) return true;
     return false;
 }
-
+*/
 const formulario = document.querySelector('#formulario');
 const buttonSubmit = document.querySelector('#submit');
 const urlDesktop = 'https://web.whatsapp.com/';
@@ -24,11 +24,11 @@ formulario.addEventListener('submit', (event) => {
         let apellidos = document.querySelector('#apellidos').value
         let email = document.querySelector('#email').value
         let mensaje = 'send?phone=' + telefono + '&text=*_Test Whatsapp Form_*%0A*Nombre:*%0A' + nombre + '%0A*Apellido:*%0A' + apellidos + '%0A*Correo:*%0A' + email + ''
-        if(isMobile()) {
+        /*if(isMobile()) {
             window.open(urlMobile + mensaje, '_blank')
         }else{
             window.open(urlDesktop + mensaje, '_blank')
-        }
+        }*/
         buttonSubmit.innerHTML = '<i class="fab fa-whatsapp"></i> Enviar WhatsApp'
         buttonSubmit.disabled = false
     }, 3000);
